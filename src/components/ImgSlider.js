@@ -5,42 +5,42 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 function ImgSlider() {
-    let settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-    };
-    
-    return (
-        <Carousel {...settings}>
-            <Wrap>
-                <a>
-                    <img src="/images/slider-badging.jpg" alt="" />
-                </a>
-            </Wrap>
+  let settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+  };
 
-            <Wrap>
-                <a>
-                    <img src="/images/slider-scale.jpg" alt="" />
-                </a>
-            </Wrap>
+  return (
+    <Carousel {...settings}>
+      <Wrap>
+        <a>
+          <img src="/images/slider-badging.jpg" alt="" />
+        </a>
+      </Wrap>
 
-            <Wrap>
-                <a>
-                    <img src="/images/slider-badag.jpg" alt="" />
-                </a>
-            </Wrap>
+      <Wrap>
+        <a>
+          <img src="/images/slider-scale.jpg" alt="" />
+        </a>
+      </Wrap>
 
-            <Wrap>
-                <a>
-                    <img src="/images/slider-scales.jpg" alt="" />
-                </a>
-            </Wrap>
-        </Carousel>
-    )
+      <Wrap>
+        <a>
+          <img src="/images/slider-badag.jpg" alt="" />
+        </a>
+      </Wrap>
+
+      <Wrap>
+        <a>
+          <img src="/images/slider-scales.jpg" alt="" />
+        </a>
+      </Wrap>
+    </Carousel>
+  )
 }
 
 const Carousel = styled(Slider)`
